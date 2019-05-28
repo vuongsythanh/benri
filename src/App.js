@@ -4,19 +4,16 @@ import './App.css';
 import firebase from '../src/firebaseConfig'
 
 function App() {
-
-  // const [data, setData] = useState(null);
   useEffect(() => {
     document.title = 'JVC-benri';
-    const databaseRef = firebase.database().ref();
-    const word = databaseRef.child("words");
-    word.on('value', (snapshot) => {
+    const dbRef = firebase.database().ref();
+    const wordsRef = dbRef.child("words");
+    wordsRef.on('value', snapshot => {
       let words = snapshot.val();
-      words.map(item => {
-        console.table(item);
-      });
+      console.table(words);
     });
   });
+
   return (
     <div className="App">
       <header className="App-header">

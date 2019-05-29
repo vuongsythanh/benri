@@ -19,6 +19,7 @@ function App() {
 
   useEffect(() => {
     fetchData();
+    document.title = "Benri-Tiện ích tra hán việt!";
   }, []);
 
   const { SearchBar } = Search;

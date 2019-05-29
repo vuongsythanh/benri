@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "454c07b28fba5fd97980e3a4b4be790f",
+    "revision": "de7c7f1d78b815f6caeef699297e680b",
     "url": "/benri/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/benri/static/js/2.0fec10fc.chunk.js"
   },
   {
-    "revision": "d3d4732266842d3da54c",
-    "url": "/benri/static/js/main.c3b9a080.chunk.js"
+    "revision": "dd3c9d3d7aa3270943d4",
+    "url": "/benri/static/js/main.fc6c620c.chunk.js"
   },
   {
     "revision": "85572882c8cabd46190c",

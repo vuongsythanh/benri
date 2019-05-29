@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/benri/static/js/main.c3b9a080.chunk.js",
-    "main.js.map": "/benri/static/js/main.c3b9a080.chunk.js.map",
+    "main.js": "/benri/static/js/main.fc6c620c.chunk.js",
+    "main.js.map": "/benri/static/js/main.fc6c620c.chunk.js.map",
     "runtime~main.js": "/benri/static/js/runtime~main.7d91aa23.js",
     "runtime~main.js.map": "/benri/static/js/runtime~main.7d91aa23.js.map",
     "static/css/2.266e55a5.chunk.css": "/benri/static/css/2.266e55a5.chunk.css",
     "static/js/2.0fec10fc.chunk.js": "/benri/static/js/2.0fec10fc.chunk.js",
     "static/js/2.0fec10fc.chunk.js.map": "/benri/static/js/2.0fec10fc.chunk.js.map",
     "index.html": "/benri/index.html",
-    "precache-manifest.418883c327c673625010bff5ff005d8d.js": "/benri/precache-manifest.418883c327c673625010bff5ff005d8d.js",
+    "precache-manifest.7a5318a982410476a06e41a7d03e72d9.js": "/benri/precache-manifest.7a5318a982410476a06e41a7d03e72d9.js",
     "service-worker.js": "/benri/service-worker.js",
     "static/css/2.266e55a5.chunk.css.map": "/benri/static/css/2.266e55a5.chunk.css.map"
   }

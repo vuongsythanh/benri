@@ -17,9 +17,14 @@ label {
     justify-content: flex-end !important;
 }
 
+.react-bootstrap-table-pagination {
+    flex-wrap: inherit !important;
+}
+
 .customToggleList {
     display: flex !important;
     margin-top: 5px;
+    flex-wrap: wrap-reverse !important;
 }
 
 #pageDropDown {

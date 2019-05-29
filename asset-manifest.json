@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.js": "/benri/static/js/main.b7bb5973.chunk.js",
-    "main.js.map": "/benri/static/js/main.b7bb5973.chunk.js.map",
+    "main.css": "/benri/static/css/main.3011dfe6.chunk.css",
+    "main.js": "/benri/static/js/main.b7189606.chunk.js",
+    "main.js.map": "/benri/static/js/main.b7189606.chunk.js.map",
     "runtime~main.js": "/benri/static/js/runtime~main.7d91aa23.js",
     "runtime~main.js.map": "/benri/static/js/runtime~main.7d91aa23.js.map",
-    "static/css/2.266e55a5.chunk.css": "/benri/static/css/2.266e55a5.chunk.css",
-    "static/js/2.0fec10fc.chunk.js": "/benri/static/js/2.0fec10fc.chunk.js",
-    "static/js/2.0fec10fc.chunk.js.map": "/benri/static/js/2.0fec10fc.chunk.js.map",
+    "static/css/2.5121d26c.chunk.css": "/benri/static/css/2.5121d26c.chunk.css",
+    "static/js/2.c6b698e3.chunk.js": "/benri/static/js/2.c6b698e3.chunk.js",
+    "static/js/2.c6b698e3.chunk.js.map": "/benri/static/js/2.c6b698e3.chunk.js.map",
     "index.html": "/benri/index.html",
-    "precache-manifest.3c09ab7f58b0c2dec8db472932ecb023.js": "/benri/precache-manifest.3c09ab7f58b0c2dec8db472932ecb023.js",
+    "precache-manifest.ad359f4afdf02ac66d3e694fa58d469f.js": "/benri/precache-manifest.ad359f4afdf02ac66d3e694fa58d469f.js",
     "service-worker.js": "/benri/service-worker.js",
-    "static/css/2.266e55a5.chunk.css.map": "/benri/static/css/2.266e55a5.chunk.css.map"
+    "static/css/2.5121d26c.chunk.css.map": "/benri/static/css/2.5121d26c.chunk.css.map",
+    "static/css/main.3011dfe6.chunk.css.map": "/benri/static/css/main.3011dfe6.chunk.css.map"
   }
 }

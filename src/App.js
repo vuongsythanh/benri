@@ -67,7 +67,7 @@ function App() {
       </Row>
       <Row>
         <Col>
-          <Table striped bordered hover variant="dark">
+          <Table striped bordered hover responsive="sm" variant="dark">
             <thead>
               <tr>
                   <th>Từ vựng</th>

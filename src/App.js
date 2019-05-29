@@ -37,14 +37,14 @@ function App() {
   }, {
     text: 'Ý nghĩa',
     dataField: 'meaning',
-    hidden: true
   }, {
     text: 'Cách nhớ',
     dataField: 'note',
     hidden: true
   }, {
     text: 'Trình độ',
-    dataField: 'level'
+    dataField: 'level',
+    hidden: true
   }, {
     text: 'Loại từ',
     dataField: 'rank',

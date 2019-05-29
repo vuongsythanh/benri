@@ -36,16 +36,19 @@ function App() {
     dataField: 'read'
   }, {
     text: 'Ý nghĩa',
-    dataField: 'meaning'
+    dataField: 'meaning',
+    hidden: true
   }, {
     text: 'Cách nhớ',
-    dataField: 'note'
+    dataField: 'note',
+    hidden: true
   }, {
     text: 'Trình độ',
     dataField: 'level'
   }, {
     text: 'Loại từ',
-    dataField: 'rank'
+    dataField: 'rank',
+    hidden: true
   }];
 
   const options = {

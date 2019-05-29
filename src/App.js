@@ -20,16 +20,16 @@ function App() {
   }, []);
 
   const onChangeText = () => {
-    let text = inputText.current.value;
+    let text = inputText.current.value.toLowerCase();
     if(text!==''){
       let newData = data.filter(item => item.vn.toLowerCase().includes(text));
       setTimeout(() => {
         setData(newData);
-      }, 1000);
+      }, 2000);
     } else {
       setTimeout(() => {
         fetchData();
-      }, 1100);
+      }, 2200);
     }
   }
 

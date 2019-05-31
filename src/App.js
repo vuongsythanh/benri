@@ -4,7 +4,7 @@ import { Container, Row, Col, Jumbotron } from 'react-bootstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider, { Search, ColumnToggle } from 'react-bootstrap-table2-toolkit';
 import paginationFactory from 'react-bootstrap-table2-paginator';
-import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
+import filterFactory from 'react-bootstrap-table2-filter';
 
 function App() {
 
@@ -33,20 +33,12 @@ function App() {
     nextPageText: '>',
     lastPageText: '>>',
     sizePerPageList: [{
-      text: '40', value: 40
-    }, {
-      text: '60', value: 60
-    },{
-      text: '80', value: 80
+      text: '50', value: 50
     },{
       text: '100', value: 100
-    }]
+    }
+  ]
   };
-
-  const defaultSorted = [{
-    dataField: 'vn',
-    order: 'asc'
-  }];
 
   const columns = [{
     text: 'Từ vựng',
@@ -60,43 +52,10 @@ function App() {
       return {
         backgroundColor: '#c8e6c9'
       };
-    },
-    filter: textFilter({
-      placeholder: '握手',
-    })
+    }
   }, {
     text: 'Âm hán việt',
     dataField: 'vn',
-    sort: true,
-    sortCaret: (order, column) => {
-      if (!order) return (<span>&nbsp;&nbsp;&#8595;/&#8593;</span>);
-      else if (order === 'desc') return (<span>&nbsp;&nbsp;<font color="orange">&#8595;</font>/&#8593;</span>);
-      else if (order === 'asc') return (<span>&nbsp;&nbsp;&#8595;/<font color="orange">&#8593;</font></span>);
-      return null;
-    },
-     headerStyle: (column, colIndex) => {
-      if (colIndex % 2 === 0) {
-        return {
-          backgroundColor: '#81c784'
-        };
-      }
-      return {
-        backgroundColor: '#c8e6c9'
-      };
-    },
-    filter: textFilter({
-      placeholder: 'Ác thủ',
-    })
-  }, {
-    text: 'Cách đọc',
-    dataField: 'read',
-    sort: true,
-    sortCaret: (order, column) => {
-      if (!order) return (<span>&nbsp;&nbsp;&#8595;/&#8593;</span>);
-      else if (order === 'desc') return (<span>&nbsp;&nbsp;<font color="orange">&#8595;</font>/&#8593;</span>);
-      else if (order === 'asc') return (<span>&nbsp;&nbsp;&#8595;/<font color="orange">&#8593;</font></span>);
-      return null;
-    },
     headerStyle: (column, colIndex) => {
       if (colIndex % 2 === 0) {
         return {
@@ -106,10 +65,21 @@ function App() {
       return {
         backgroundColor: '#c8e6c9'
       };
-    },
-    filter: textFilter({
-      placeholder: 'あくしゅ',
-    })
+    }
+  }, {
+    text: 'Cách đọc',
+    dataField: 'read',
+    hidden: true,
+    headerStyle: (column, colIndex) => {
+      if (colIndex % 2 === 0) {
+        return {
+          backgroundColor: '#81c784'
+        };
+      }
+      return {
+        backgroundColor: '#c8e6c9'
+      };
+    }
   }, {
     text: 'Ý nghĩa',
     dataField: 'meaning',
@@ -122,10 +92,7 @@ function App() {
       return {
         backgroundColor: '#c8e6c9'
       };
-    },
-    filter: textFilter({
-      placeholder: 'Bắt tay',
-    })
+    }
   }, {
     text: 'Cách nhớ',
     dataField: 'note',
@@ -139,10 +106,7 @@ function App() {
       return {
         backgroundColor: '#c8e6c9'
       };
-    },
-    filter: textFilter({
-      placeholder: 'điền từ bạn nhớ',
-    })
+    }
   }, {
     text: 'Trình độ',
     dataField: 'level',
@@ -156,10 +120,7 @@ function App() {
       return {
         backgroundColor: '#c8e6c9'
       };
-    },
-    filter: textFilter({
-      placeholder: 'N5,N4,N3,N2,N1'
-    })
+    }
   }, {
     text: 'Loại từ',
     dataField: 'type',
@@ -173,10 +134,7 @@ function App() {
       return {
         backgroundColor: '#c8e6c9'
       };
-    },
-    filter: textFilter({
-      placeholder: 'danh từ, động từ, phó từ, tính từ, karakana',
-    })
+    }
   }];
 
   return (
@@ -189,7 +147,7 @@ function App() {
           <div className="alert alert-primary">
             <a href="null" className="alert-link">Nếu bạn đang loay hoay </a>
             <a href="null">tra nghĩa từ vựng theo âm hán việt. </a>
-            <a href="null">Tra từ vựng cấp N5-N4-N3. </a>
+            <a href="null">Tra nghĩa từ vựng theo cấp N2-N3-N4-N5. </a>
             <a href="null">Khó nhớ 2136 hán tự. </a>
             <a href="null" className="alert-link">Thì đây là tiện ích bạn cần!</a>
           </div>
@@ -222,7 +180,7 @@ function App() {
                   <SearchBar 
                     { ...props.searchProps } 
                     className="custome-search-field mb-4"
-                    placeholder="Nhập từ cần tìm. Hoặc tra từ theo cột tương ứng bên dưới..."
+                    placeholder="Nhập từ cần tìm..."
                     style={{padding:'1.5rem', fontWeight: 'bold'}}
                   />
                   <BootstrapTable
@@ -232,7 +190,6 @@ function App() {
                     { ...props.baseProps }
                     pagination={ paginationFactory(options) }
                     noDataIndication="Lấy dữ liệu..."
-                    defaultSorted={ defaultSorted } 
                     filter={ filterFactory() }
                   />
                 </div>

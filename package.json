@@ -2,7 +2,7 @@
     "name": "benri",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://www.benri.tk",
+    "homepage": "https://vuongsythanh.github.io/benri",
     "dependencies": {
         "bootstrap": "^4.3.1",
         "firebase": "^6.0.4",
